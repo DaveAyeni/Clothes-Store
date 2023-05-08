@@ -249,7 +249,7 @@ h4{
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        width: 100vw;
+        width: 90vw;
         position: absolute;
         background: radial-gradient(#fff, #ffd6d6);
         padding: 0rem 1rem;
