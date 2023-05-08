@@ -198,12 +198,8 @@ footer{
 }
 footer button{
     display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 3px 10px;
-    background-color: #fff;
-    border-radius: 3px;
-
+    border: none;
+    background-color: black;
 }
 footer button i{
     color: black;
@@ -211,7 +207,7 @@ footer button i{
 }
 .btn-container{
     display: flex;
-    padding: 9px 0;
+    padding: 10px 0;
     gap: 10px;
 }
 h4{
@@ -222,11 +218,11 @@ h4{
     flex-basis: 300px;
 }
 .foot2{
-    text-align: center;
-    flex-basis: 300px ;
+     flex-basis: 300px ;
 }
 .foot3 {
     flex-basis: 100px;
+    padding: 0 1rem;
 }
 .foot4{
     flex-basis: 100px;
@@ -249,7 +245,7 @@ h4{
         display: block;
     }
     .links{
-        display: block;
+        display: none;
         flex-direction: column;
         justify-content: center;
         align-items: center;
@@ -280,6 +276,24 @@ h4{
         
     }
     .active{
-        display: block;
+        display: flex;
+    }
+}
+@media(max-width:412px){
+    .section-1{
+        padding: 1rem 3rem;
+    }
+    .section-2, .section-3{
+        padding: 3rem;
+    }
+    .section-3 .collection{
+        flex-basis: 400px;
+    }
+    footer{
+        justify-content: flex-start;
+        padding: 2rem 2rem ;
+    }
+    .foot3 {
+        flex-basis: 400px;
     }
 }
