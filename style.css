@@ -265,24 +265,24 @@ h4{
         align-items: center;
         width: 90vw;
         position: absolute;
-        background: radial-gradient(#fff, #ffd6d6);
+        background: black;
         padding: 0rem 1rem;
         padding-bottom: 3rem;
         top: 72%;
         left: 0;
-        text-align: center;
+        text-align: right;
         border-radius: 3px;
     }
     .links ul{
         display: block;
         width: 100%;
-        font-size: 40px;
+        font-size: 35px;
     }
     .links li{
-        padding: 1rem;
+        padding: 0.5rem;
     }
     .links a{
-        color: #000;
+        color: #fff;
     }
     .chart{
         max-width: 50px;   
@@ -340,7 +340,31 @@ h4{
     height: 34px;
     background-color: #fff;
     border: 2px solid  #000;
-    
-    
-    
+}
+.Sec-1{
+    padding: 2rem 5rem;
+}
+.about{
+    text-align: center;
+    font-size: 70px;
+    padding: 3rem 0;
+}
+.about-name{
+    font-size: 35px;
+    padding-bottom: 1rem;
+}
+.Sec-1 .para{
+    padding: 1rem 0;
+    font-size: 23px;
+}
+@media(max-width:415px){
+    .Sec-1{
+        padding: 0 1rem;
+    }
+    .about{
+        font-size: 35px;
+    }
+    .Sec-1 .para{
+        font-size: 18px;
+    }
 }
