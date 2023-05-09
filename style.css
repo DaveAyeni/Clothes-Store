@@ -21,7 +21,7 @@ nav{
 .toggle-button div{
     width: 30px;
     height: 3px;
-    background-color: #fff;
+    background-color: #000;
     color: #fff;
     margin-bottom: 4px;
 }
@@ -132,14 +132,18 @@ i{
     padding-bottom: 8rem;
     gap: 32px;
     flex-wrap: wrap;
-
-
+    border: 3px solid re;
 }
 .section-3 .collection{
     width: 100%;
-    padding: 2rem 0;
+    padding: 1rem 0;
     flex-basis: 250px;
    
+}
+.section-3 .collections{
+    width: 100%;
+   padding: 3rem 0;
+   flex-basis: 250px;
 }
 .section-3 img{
     object-fit: contain;
@@ -216,29 +220,34 @@ footer button i{
     gap: 10px;
 }
 h4{
-    padding: 10px 0;
+    padding: 15px 0;
+    font-size: 23px;
 }
 .foot{
-    border: 3px solid red;
-    flex-basis: 300px;
+    
+    flex-basis: 200px;
 }
 .foot2{
-     flex-basis: 300px ;
+     flex-basis: 200px ;
+}
+.foot2 p{
+    padding: 11px 0;
 }
 .foot3 {
-    flex-basis: 100px;
-    padding: 0 1rem;
+    flex-basis: 150px;
 }
 .foot4{
-    flex-basis: 100px;
+    flex-basis: 150px;
 }
 .foot3 li, .foot4 li{
     list-style-type: none;
+    padding: 4px 0;
 }
 .foot3 a, .foot4 a{
     text-decoration: none;
-    color: #fff;
-    font-size: 20px;
+    color: #948e8e;
+    font-size: 17px;
+    padding: px 0;
 }
 @media(max-width:770px){
     nav{
@@ -276,9 +285,7 @@ h4{
         color: #000;
     }
     .chart{
-        max-width: 50px;
-      
-        
+        max-width: 50px;   
     }
     .active{
         display: flex;
@@ -294,6 +301,10 @@ h4{
     .section-3 .collection{
         flex-basis: 400px;
     }
+    .section-3 .collections{
+        flex-basis: 400px;
+        padding: 3rem 0;
+    }
     footer{
         justify-content: flex-start;
         padding: 2rem 2rem ;
@@ -301,4 +312,35 @@ h4{
     .foot3 {
         flex-basis: 400px;
     }
+}
+/*PRODUCT.HTML*/
+.section1{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 8rem;
+    flex-wrap: wrap;
+}
+@media(max-width:412px){
+    .section1{
+        padding: 1rem 3rem;
+        padding-bottom: 0;
+    }
+}
+.next{
+    display: flex;
+    justify-content: center;
+    padding-top: 4rem;
+    flex-grow: 1;
+    gap: 5px;
+   width: 100%;
+}
+.next button{
+    flex-basis: 34px;
+    height: 34px;
+    background-color: #fff;
+    border: 2px solid  #000;
+    
+    
+    
 }
