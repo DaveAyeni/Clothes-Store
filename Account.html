@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css">
+    <title>Account</title>
+
+</head>
+<body>
+    <nav>  
+        <div class="name">
+        <h1><span>Type</span>Store</h1>
+    </div>
+    <div class="links" id="btn-id">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="project.html">Products</a></li>
+            <li><a href="About.html">About</a></li>
+            <li><a href="#">Contact</a></li>
+            <li><a href="Account.html">Account</a></li>
+        </ul>
+        <div class="chart">
+            <a href="#"><img src="images/cart.png" alt="" width="100%" height="100%"></a>
+
+    </div>
+    </div>
+    <div class="toggle-button" id="toggle-button" >
+        <div></div>
+        <div></div>
+        <div></div>
+    </div>
+</nav>
+    <section class="login-section">
+        <div class="form-image">
+            <img src="images/image1.png" alt="" width="100%" height="100%">
+        </div>
+        <div class="form-container">
+            <div class="form-btn">
+                <span onclick="login()">Login</span>
+                <span onclick="register()">Register</span>
+                <hr id="Indicator">
+            </div>
+            <form action="" id="LoginForm">
+                <input type="text" placeholder="UserName">
+                <input type="password" placeholder="Password">
+                <button class="login-btn">Login</button>
+                <a href="">Forget Password</a>
+            </form>
+            <form action="" id="RegForm">
+                <input type="text" placeholder="UserName">
+                <input type="email" placeholder="Email">
+                <input type="password" placeholder="Password">
+                <button class="login-btn">Register</button>
+                
+            </form>
+        </div>
+        
+    </section>
+    <footer>
+        <div class="foot1">
+            <h4>Download App</h4>
+            <p>Download App For Andriod And Ios Mobile Phone</p>
+        <div class="btn-container">
+            <button>
+                <a href="https://play.google.com/store/games">
+                    <img src="images/Google_Play_Store_badge_EN.svg.png" alt="" width="100%" height="100%" style="max-width: 100px;">
+                <!-- <div>
+                    <i class="fa fa-play fa-2x" aria-hidden="true"></i>
+                    </div>
+                    <div>
+                        <p>GET IT ON</p>
+                        <p style="font-size: 18px;">Google Play</p>
+                    </div> -->
+            </a>
+                
+            </button>
+        <div>
+            <button>
+                <a href="https://www.apple.com/store"><img src="images/app-store.png" width="100%" height="100%" alt="" style="max-width: 100px;"></a>
+                <!-- <div>
+                    <i class="fa fa-apple fa-2x" aria-hidden="true" style="padding-right:5px ;"></i>
+                    </div>
+                    <div>
+                        <p>GET IT ON</p>
+                        <p style="font-size: 18px;">App Store</p>
+                    </div> -->
+            </button>
+            </div>
+            </div>
+        </div>
+    
+        <div class="foot2">
+            <div>
+                <h1><span>Type</span>Store</h1>
+            </div>
+            <p>Our purpose is to sustainably make the pleasure and benefit of sport accessible to the many.</p>
+        </div>
+        <div class="foot3">
+            <h4>Useful Links</h4>
+            <ul>
+                <li><a href="#">Coupons</a></li>
+                <li><a href="#">Blog Past</a></li>
+                <li><a href="#">Return</a></li>
+                <li><a href="#">Join Affiliate</a></li>
+            </ul>
+        </div>
+        <div class="foot4">
+            <h4>Follow Us</h4>
+            <ul>
+                <li><a href="#">Facebook</a></li>
+                <li><a href="#">Twitter</a></li>
+                <li><a href="#">Instagram</a></li>
+                <li><a href="#">YouTube</a></li>
+            </ul>
+        </div>
+        
+    </footer>
+</body>
+<script>
+    var LoginForm = document.getElementById("LoginForm");
+    var RegForm = document.getElementById("RegForm");
+    var Indicator = document.getElementById("Indicator")
+    
+    function register(){
+        RegForm.style.transform = "translateX(0px)";
+        LoginForm.style.transform = "translateX(0px)";
+        Indicator.style.transform = "translateX(130px)";
+    }
+
+    function login(){
+        RegForm.style.transform = "translateX(300px)";
+        LoginForm.style.transform = "translateX(300px)";
+        Indicator.style.transform = "translateX(0px)";
+    }
+</script>
+<script>
+    const toggleButton = document.getElementById('toggle-button');
+  const navlist = document.getElementById('btn-id');
+  toggleButton.addEventListener('click', () => {
+      navlist.classList.toggle('active');
+  })
+</script>
+</html>
